@@ -233,8 +233,8 @@ sub pm_wait
 					};
 				};
 				$self->SUPER::n_processes($newnp);
-				$self->{_last_delta_time} = time();
 			};
+			$self->{_last_delta_time} = time();
 		}
 		elsif (keys(%{$self->{PIDS}}) < $self->{n_processes}) 
 		{
